@@ -1,0 +1,95 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace; /* Definindo a fonte */
+    line-height: 1.6; /* Aumentando o espaçamento entre linhas */
+    background-color: black; /* Cor de fundo preta */
+    color: #22d4f2; /* Cor do texto como #22d4f2 */
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background: #22d4f2; /* Cor de fundo do cabeçalho */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 1rem; /* Bordas arredondadas */
+}
+
+.menu {
+    display: flex; /* Usando flexbox para alinhar os itens */
+    justify-content: flex-start; /* Alinhando à esquerda */
+}
+
+.menu1 {
+    color: white; /* Cor do texto do link (branco) */
+    text-decoration: none; /* Removendo o sublinhado */
+    font-weight: bold; /* Deixando o texto em negrito */
+}
+
+/* Estilizando a seção principal */
+.pai {
+    max-width: 800px; /* Largura máxima */
+    margin: 20px auto; /* Centralizando horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background: #333; /* Fundo cinza escuro para a seção principal */
+    border-radius: 1rem; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilizando o título */
+.pz_titulo {
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilizando a apresentação dos links */
+.links {
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilizando os links para serem exibidos verticalmente */
+.links a {
+    display: block; /* Mudando para exibição em bloco para empilhar verticalmente */
+    margin-bottom: 10px; /* Espaçamento inferior entre os links */
+}
+
+/* Estilizando os botões */
+.button {
+    display: block; /* Exibindo como bloco para cada link ocupar uma linha */
+    background: #000000; /* Cor de fundo preta */
+    color: #FFFFFF; /* Cor do texto branco */
+    padding: 10px 15px; /* Espaçamento interno */
+    text-decoration: none; /* Removendo sublinhado */
+    border: 2px solid #FFFFFF; /* Bordas brancas */
+    border-radius: 1rem; /* Bordas arredondadas */
+    transition: background 0.3s, color 0.3s; /* Efeito de transição */
+}
+
+.button:hover {
+    background: #FFFFFF; /* Cor de fundo ao passar o mouse */
+    color: #000000; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilizando o rodapé */
+.rodape {
+    text-align: center; /* Centralizando texto */
+    margin-top: 20px; /* Espaçamento superior */
+    padding: 10px; /* Espaçamento interno */
+    background: #22d4f2; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto do rodapé (branco) */
+    border-radius: 1rem; /* Bordas arredondadas */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .pai {
+        margin: 10px; /* Ajustando margens em telas menores */
+    }
+
+    .button {
+        padding: 8px 12px; /* Ajustando padding para botões em telas menores */
+    }
+}

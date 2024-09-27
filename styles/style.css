@@ -1,0 +1,213 @@
+/* Reset global de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral do body */
+body {
+    box-sizing: border-box;
+    background-color: black;
+    height: 100vh;
+}
+
+/* Estilo para o título principal (h1) */
+h1 {
+    color: #22d4f2;
+}
+
+/* Estilo para os parágrafos */
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f6f6f6;
+}
+
+/* Estilo para strong com classe Destaque */
+strong.Destaque {
+    color: #f6f6f6;
+}
+
+/* Estilo para strong com classe titulo */
+strong.titulo {
+    color: #f6f6f6;
+}
+
+/* Estilo para a seção de apresentação principal */
+.Apresentação {
+    padding: 2% 10%; /* Aumentado o espaço para o texto */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+/* Estilo para o conteúdo dentro da apresentação */
+.apresentação_conteudo {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-right: 6rem; /* Mais espaço para o texto */
+    text-align: justify;
+}
+
+/* Estilo para a seção de links dentro da apresentação */
+.apresentação_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Estilo para o título dentro do conteúdo da apresentação */
+.apresentação_conteudo_titulo {
+    font-size: 1.8rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+/* Estilo para o texto dentro do conteúdo da apresentação */
+.apresentação_conteudo_texto {
+    font-size: 1.25rem;
+}
+
+/* Estilo para os links na seção de apresentação */
+.apresentação_links_link {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: #f6f6f6;
+    border-width: 0.125rem;
+    width: 18rem;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    padding: 0.8rem 0;
+    gap: 1rem;
+    text-decoration: dashed;
+    color: #f6f6f6;
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* Ajuste para a imagem */
+
+.photo {
+    max-width: 40%; /* Reduzido o tamanho da imagem */
+    height: auto;
+    border-radius: 1rem; /* Adiciona bordas arredondadas */
+}
+
+
+/* Estilo para o subtítulo de nível 2 */
+h2 {
+    color: white;
+}
+
+/* Estilo para o segundo título na apresentação */
+.apresentação_conteudo_titulo2 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+/* Estilo para links de apresentação ao passar o cursor */
+.apresentação_links_link:hover {
+    background-color: #22d4f2;
+    border-color: var(--cor-letra);
+}
+
+/* Estilo para o título ao passar o cursor */
+strong.titulo:hover {
+    color: #22d4f2;
+}
+
+/* Estilo para o rodapé do site */
+footer {
+    background-color: #22d4f2;
+    color: #000000;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    padding: 1.5rem;
+}
+
+/* Estilo para o cabeçalho do site */
+header {
+    padding: 2% 0% 0% 10%;
+}
+
+/* Estilo para os links no cabeçalho */
+.head_link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #22d4f2;
+    text-decoration: none;
+}
+
+/* Estilo para listas */
+ul {
+    color: #f6f6f6;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+    padding: 1.5%;
+}
+
+/* Estilo para a área do cabeçalho */
+.cabecalho {
+    display: flex;
+    gap: 3rem;
+}
+
+/* Estilo para telas com largura máxima de 1024px */
+@media (max-width: 1024px) {
+    .Apresentação {
+        padding: 3%;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .photo {
+        transform: scale(0.75);
+    }
+
+    .apresentação_links_link {
+        width: 85%;
+    }
+
+    .apresentação_links {
+        gap: 1.5rem;
+    }
+}
+
+/* Estilo para telas com largura máxima de 768px */
+@media (max-width: 768px) {
+    .Apresentação {
+        padding: 4%;
+        gap: 1.5rem;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .apresentação_conteudo {
+        padding-right: 0;
+    }
+
+    .apresentação_links_link {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .photo {
+        max-width: 60%; /* Ajuste para diminuir ainda mais em telas menores */
+    }
+
+}
